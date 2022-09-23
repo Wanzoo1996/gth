@@ -1,0 +1,41 @@
+# Exclude dot-files and dot-directories
+.*
+
+# Exclude BcContainerHelper files
+*.flf
+TestResults.xml
+BuildOutput.txt
+
+# Reapply rules to files in .vscode folders
+!.vscode/
+**/.vscode/*
+
+# Keep gitignore
+!.gitignore
+
+# Keep .gitmodules
+!.gitmodules
+
+# Keep .gitattributes
+!.gitattributes
+
+# Keep VS Code tasks
+!tasks.json
+
+# Keep .NET packages
+!.netpackages
+
+# Keep AL Object ID Ninja config
+!.objidconfig
+
+# Exclude AL packages
+*.app
+
+# Exclude permission analyzer state
+permissionsAnalyzer.json
+
+# Exclude global translation
+*.g.xlf
+
+# Keep Softera configs
+!.softera

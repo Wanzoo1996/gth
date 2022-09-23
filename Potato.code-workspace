@@ -1,0 +1,89 @@
+{
+	"folders": [
+		{
+			"path": "MainApp",
+		},
+		{
+			"path": "TestApp",
+		},
+		{
+			"path": ".",
+		},
+	],
+	"extensions": {
+		"recommendations": [
+			"ms-dynamics-smb.al",
+			"waldo.crs-al-language-extension",
+			"vjeko.vjeko-al-objid",
+			"davidfeldhoff.al-codeactions",
+			"rasmus.al-var-helper",
+			"nabsolutions.nab-al-tools",
+            "BartPermentier.al-toolbox",
+			"andrzejzwierzchowski.al-code-outline",
+			"stefanmaron.businesscentral-lintercop",
+			"vjeko.al-pragma-explorer",
+			"mhutchie.git-graph",
+			"eamodio.gitlens",
+			"ms-vsliveshare.vsliveshare-pack",
+		],
+	},
+	"settings": {
+		"workbench.iconTheme": "al",
+		"files.exclude": {
+			"**/*.code-workspace": true,
+			"MainApp/": true,
+			"TestApp/": true,
+		},
+		"explorer.fileNesting.enabled": true,
+		"explorer.fileNesting.expand": false,
+		"explorer.fileNesting.patterns": {
+			"*.report.al": "$(capture).report.rdl, $(capture).report.docx, $(capture).report.xlsx",
+			"*.reportext.al": "$(capture).reportext.rdl, $(capture).reportext.docx, $(capture).reportext.xlsx",
+		},
+		"editor.snippetSuggestions": "bottom",
+		"[json]": {
+			"editor.defaultFormatter": "vscode.json-language-features",
+			"editor.formatOnSave": true,
+		},
+		"[al]": {
+			"files.trimTrailingWhitespace": true,
+			"files.trimFinalNewlines": true,
+		},
+		"[yaml]": {
+			"files.trimTrailingWhitespace": true,
+			"files.trimFinalNewlines": true,
+		},
+		"[azure-pipelines]": {
+			"files.trimTrailingWhitespace": true,
+			"files.trimFinalNewlines": true,
+		},
+		"al.assemblyProbingPaths": [
+			"./.netpackages",
+			"C:/Windows/assembly",
+		],
+		"al.enableCodeAnalysis": true,
+		"al.codeAnalyzers": [
+			"${CodeCop}",
+			"${UICop}",
+			"${PerTenantExtensionCop}",
+			"${AppSourceCop}",
+			"${analyzerFolder}BusinessCentral.LinterCop.dll",
+		],
+		"al.ruleSetPath": "./al.ruleset.json",
+		"CRS.OnSaveAlFileAction": "Reorganize",
+		"CRS.ObjectNamePrefix": "SAUCE ",
+        "CRS.ObjectNameSuffix": "",
+		"CRS.RemovePrefixFromFilename": true,
+		"CRS.RemoveSuffixFromFilename": true,
+		"CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"git.enableSmartCommit": true,
+		"git.autofetch": true,
+		"git.confirmSync": false,
+		"git.branchProtection": [
+			"code/*",
+			"releases/*",
+		],
+	},
+}

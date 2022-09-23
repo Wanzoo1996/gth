@@ -1,0 +1,21 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Report Builder",
+            "type": "process",
+            "command": "C:\\Program Files (x86)\\Microsoft SQL Server\\Report Builder\\MSReportBuilder.exe",
+            "args": ["${file}"],
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Report Builder (15.0)",
+            "type": "process",
+            "command": "C:\\Program Files (x86)\\Microsoft Report Builder\\MSReportBuilder.exe",
+            "args": ["${file}"],
+            "problemMatcher": []
+        }
+    ]
+}
